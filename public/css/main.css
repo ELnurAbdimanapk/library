@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+main{
+    min-height: 550px;
+    
+}
+.header {
+    font-size: 50px;
+}
+header img{
+    padding: 0;
+    margin-top: -50px;
+}
+.container {
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1, footer p {
+    margin: 0;
+    text-align: center;
+    color: rgb(248, 248, 248);
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+gap: 100px;    
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.buttons{
+    margin: auto;
+    text-align: center;
+}
+main {
+    flex: 1;
+    padding: 50px 0;
+}
+
+button {
+    background: linear-gradient(45deg, #007BFF, #22CC88);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #22CC88, #007BFF);
+}
+
+
+.form-container {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, label {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+
+@media screen and (max-width:1250px) {
+    header img{
+        width: 300px;
+        height: 70px;
+    }
+}
+@media screen and (max-width:800px) {
+    header img{
+        width: 150px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:320px) {
+    .header{
+        font-size: 20px;
+    }
+    .list  {
+        display: none;
+    }
+    header img{
+        width: 100px;
+        height: 30px;
+    }
+}

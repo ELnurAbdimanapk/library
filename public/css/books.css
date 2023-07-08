@@ -1,0 +1,91 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+} 
+
+ h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.book-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  color: #888;
+  font-size: 20px;
+}
+
+/* Search */
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#search-form:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#search-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  margin: auto;
+  height: 50px;
+}
+
+#search-form input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #3c58e8;
+  background: linear-gradient(to right, #3c58e8, #3d5af1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#search-form input[type="submit"]:hover {
+  background: #3d5af1;
+  background: linear-gradient(to right, #3d5af1, #3c58e8);
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 550px;
+}
+
+#results .book {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}

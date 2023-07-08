@@ -1,0 +1,1 @@
+document.getElementById('search-form').addEventListener('submit')
