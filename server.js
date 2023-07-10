@@ -13,7 +13,7 @@ const db = require('./db')
 
 app.use(cors())
 app.use(express.urlencoded({extended:false}))
-app.use(express.static('public'))
+app.use(express.static('public')) //publictin  ichinde css js bolot
 db.defaults(defaultData).write()
 
 app.use(express.json())
@@ -29,7 +29,7 @@ app.use(
 );
 
 
-app.get('/',(req,res) => {
+app.get('/',(req,res) => {        //papkanyn atyn ele jazabyz
     res.render('index')
 })
 app.get('/me', (req, res) => {
